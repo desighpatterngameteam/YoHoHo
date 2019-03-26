@@ -3,10 +3,7 @@ package Service.impl;
 import Game.Attack.AttackBehavior;
 import Game.Attack.AttackWithSkill;
 import Game.Attack.AttackWithWeapon;
-import bean.Equipment;
-import bean.Monster;
-import bean.Player;
-import bean.Skill;
+import bean.*;
 import exception.AttackException;
 import exception.NotEnoughCashException;
 import util.Level;
@@ -25,13 +22,41 @@ public class PlayerServiceImpl implements Service.PlayerService {
     @Override
     public void BuyEquipment(Equipment equipment) throws NotEnoughCashException {
         int currentCash = player.getCash();
+
         int cost = equipment.getCostOfEquipment();
+        System.out.println("当前花费的 金币是："+cost);
         if(currentCash < cost){
             throw new NotEnoughCashException("金币不足");
         }else {
             player.setCash(currentCash-cost);
+            System.out.println("当前金币是："+player.getCash());
             List<Equipment> equipments = player.getEquipments();
             equipments.add(equipment);
+
+            if(equipment.getEquipmentType()== Constants.EQUIPMENT_FOR_WEAPON){  //如果是强化武器的装备
+                Weapon currentWeapon = player.getCurrentWeapon();
+                currentWeapon.setWeaponDamage(currentWeapon.getWeaponDamage() + equipment.getPhysicAdditon());
+            }else {//否则是强化技能的装备
+                List<Skill> skills = player.getSkills();
+                Skill currentselectedSkill = skills.get(player.getCurrentSelectedSkillIndex());
+                currentselectedSkill.setPhysicAdditionDamage(currentselectedSkill.getPhysicAdditionDamage()+equipment.getPhysicAdditon());
+                currentselectedSkill.setMagicAdditionDamge(currentselectedSkill.getMagicAdditionDamge()+equipment.getMagicAddition());
+                Skill skill = new Skill();
+                Skill skill_updated = skill.updateSkillExp(currentselectedSkill , equipment);//更新该技能的经验值 和 等级
+                System.out.println("---------------------------");
+                skill_updated.print();
+                System.out.println("---------------------------");
+                skills.set(player.getCurrentSelectedSkillIndex() , skill_updated);
+                player.setSkills(skills);
+            }
+
+            player.setPhysicArmor(player.getPhysicArmor() + equipment.getPhysicArmorAddition());
+            player.setMagicArmor(player.getMagicArmor()+equipment.getMagicArmorAddition());
+            player.setHealthPoint(player.getHealthPoint() + equipment.getHealthPointAddition());
+
+            System.out.println("----------强化之后的角色属性---------------");
+            player.print();
+            System.out.println("---------------------------");
         }
     }
 
@@ -55,19 +80,29 @@ public class PlayerServiceImpl implements Service.PlayerService {
      * @throws AttackException
      */
     @Override
-    public void AttackMonsterWithSkill( Monster monster , Skill skill) throws AttackException{
+    public void AttackMonsterWithSkill( Monster monster , String attackInfo) throws AttackException{
+        Skill skill = player.findSkillByKeyInput(attackInfo);   //根据键盘的信息 得出发出的技能
         AttackBehavior attackBehavior = new AttackWithSkill();
         player.setAttackBehavior(attackBehavior);
         attackBehavior.attackEnemy(player,skill,monster);
-
         /*以下为调试信息输出
          */
         System.out.println("--------------------------------------");
+        System.out.println("本次使用技能 "+skill.getSkillName()+" 攻击");
         player.print();
         monster.print();
         System.out.println("--------------------------------------");
     }
 
+    /**Description:根据Swing 购买强化技能的装备界面，购买完后，选择需要强化的技能，在Swing界面记录玩家所选择的技能编号index
+     * function: 设置 装备用来强化的技能的索引index号（每个英雄 有 2个技能 ， 0 对应第一个技能 ，1 对应第二个技能）
+     * @param skillIndex
+     */
+    @Override
+    public void SetCurrentSelectedSkill( int skillIndex){
 
+        player.setCurrentSelectedSkillIndex(skillIndex);
+
+    }
 
 }

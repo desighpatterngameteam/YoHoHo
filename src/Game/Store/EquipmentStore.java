@@ -16,6 +16,8 @@ public interface EquipmentStore {
 
     public Equipment searchEquipment(Equipment equipment);
 
+    public List<Equipment> getAllEquipments();
+
 //    public Equipment updateEquipment(Equipment equipment);
 
 }

@@ -2,6 +2,7 @@ package Game.PlayerBuild;
 
 import Game.PlayerBuild.PlayerBuilder;
 import bean.Constants;
+import bean.Equipment;
 import bean.Skill;
 import bean.Weapon;
 
@@ -30,6 +31,10 @@ public class GarenBuilder extends PlayerBuilder {
         player.setMagicDamage(Constants.PLAYER_INIT_MAGIC_DAMAGE);//玩家初始魔法伤害为0
         player.setPhysicDamage(Constants.PLAYER_INIT_PHYSIC_ARMOR);//初始物理抗性100
         player.setMagicArmor(Constants.PLAYER_INIT_MAGIC_ARMOR);//初始魔法抗性为0
+
+        //初始装备栏为 空的集合
+        List<Equipment> equipments = new ArrayList<>();
+        player.setEquipments(equipments);
     }
 
     @Override
@@ -43,20 +48,23 @@ public class GarenBuilder extends PlayerBuilder {
         skill1.setMagicConsume(100);
         HashSet<Integer> trigerKey = new HashSet<>();
         skill1.setTrigerKey(trigerKey);
+        skill1.setSkillExp(0);
 
         Skill skill2 = new Skill();
         skill2.setSkillName("勇气之光");
-        skill2.setLevel(0);
+        skill2.setLevel(1);
         skill2.setPhysicAdditionDamage(120);
         skill2.setMagicAdditionDamge(40);
         skill2.setMagicConsume(150);
         HashSet<Integer> trigerKey2 = new HashSet<>();
         skill2.setTrigerKey(trigerKey2);
+        skill2.setSkillExp(0);
 
         skills.add(skill1);
         skills.add(skill2);
 
         player.setSkills(skills);
+        player.setCurrentSelectedSkillIndex(0); //设置一号技能为默认选择的技能
     }
 
     @Override
@@ -68,5 +76,6 @@ public class GarenBuilder extends PlayerBuilder {
         weapon1.setWeaponDamage(120);   //初始的伤害为100
         weapons.add(weapon1);
         player.setWeapons(weapons);
+        player.setCurrentWeapon(weapon1);
     }
 }

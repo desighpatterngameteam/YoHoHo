@@ -27,10 +27,12 @@ public class Player {
     private List<Skill> skills; //角色技能集合
     private List<Equipment> equipments; //角色装备栏
     private List<Weapon> weapons;   //武器集合
+    private Weapon currentWeapon;   //当前使用的武器
+    private int currentSelectedSkillIndex;    //当前选择强化的技能号
 
     private Player(){}
 
-    public Player(String name, int level, int experience, int healthPoint, int magicPoint, int cash, int physicDamage, int magicDamage, int physicArmor, int magicArmor, AttackBehavior attackBehavior, List<Skill> skills, List<Equipment> equipments, List<Weapon> weapons) {
+    public Player(String name, int level, int experience, int healthPoint, int magicPoint, int cash, int physicDamage, int magicDamage, int physicArmor, int magicArmor, AttackBehavior attackBehavior, List<Skill> skills, List<Equipment> equipments, List<Weapon> weapons, Weapon currentWeapon, int currentSelectedSkillIndex) {
         this.name = name;
         this.level = level;
         this.experience = experience;
@@ -45,6 +47,8 @@ public class Player {
         this.skills = skills;
         this.equipments = equipments;
         this.weapons = weapons;
+        this.currentWeapon = currentWeapon;
+        this.currentSelectedSkillIndex = currentSelectedSkillIndex;
     }
 
     public static Player getInstance(){
@@ -172,6 +176,22 @@ public class Player {
         this.weapons = weapons;
     }
 
+    public Weapon getCurrentWeapon() {
+        return currentWeapon;
+    }
+
+    public void setCurrentWeapon(Weapon currentWeapon) {
+        this.currentWeapon = currentWeapon;
+    }
+
+    public int getCurrentSelectedSkillIndex() {
+        return currentSelectedSkillIndex;
+    }
+
+    public void setCurrentSelectedSkillIndex(int currentSelectedSkillIndex) {
+        this.currentSelectedSkillIndex = currentSelectedSkillIndex;
+    }
+
     //打印玩家状态信息
     public void print(){
         System.out.println("角色姓名:\t"+getName());
@@ -219,6 +239,13 @@ public class Player {
             System.out.println("物品栏为空");
         }
 
+        System.out.println("当前使用的武器是：");
+        getCurrentWeapon().print();
+
+        System.out.println("当前选择强化的技能是：");
+        List<Skill> skills = getSkills();
+        Skill currentSelectedSkill = skills.get(getCurrentSelectedSkillIndex());
+        currentSelectedSkill.print();
 
     }
 
@@ -265,6 +292,20 @@ public class Player {
     public void updateLevel(){
         int currentLevel = uniquePlayer.getLevel();
         uniquePlayer.setLevel(currentLevel+1);
+    }
+
+    /**
+     *
+     */
+    public Skill findSkillByKeyInput( String attackInfo ){
+        Skill result = new Skill();
+        switch (attackInfo){
+            case "1 q": result = skills.get(0); break;
+            case "2 w": result = skills.get(1); break;
+            default: break;
+        }
+        return result;
+
     }
 
 }

@@ -12,6 +12,15 @@ import exception.AttackException;
  */
 public interface AttackBehavior {
 
+    /**
+     * 注意计算伤害的时候
+     * 使用武器攻击时：伤害 = 角色物理伤害 + 武器的 WeaponDamage
+     * 使用技能攻击时：伤害 = 角色物理伤害+角色魔法伤害 + 技能的物理伤害+技能的魔法伤害
+     * @param player
+     * @param skill
+     * @return
+     * @throws AttackException
+     */
     public int computeDamage(Player player, Skill skill) throws AttackException;
 
     public void attackEnemy(Player player, Skill skill , Monster monster) throws AttackException;

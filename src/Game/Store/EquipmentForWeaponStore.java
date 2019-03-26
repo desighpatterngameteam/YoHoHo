@@ -27,6 +27,7 @@ public class EquipmentForWeaponStore implements EquipmentStore {
         }
     }
 
+
     @Override
     public Equipment searchEquipment(Equipment equipment){
         int index = equipments.indexOf(equipment);
@@ -37,6 +38,18 @@ public class EquipmentForWeaponStore implements EquipmentStore {
         }
     }
 
+    @Override
+    public List<Equipment> getAllEquipments(){
+        return equipments;
+    }
+
+    public List<Equipment> getEquipments() {
+        return equipments;
+    }
+
+    public void setEquipments(List<Equipment> equipments) {
+        this.equipments = equipments;
+    }
 
 //    @Override
 //    public Equipment updateEquipment(Equipment equipment){

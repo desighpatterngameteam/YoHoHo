@@ -8,17 +8,23 @@ public class Equipment {
     private int magicArmorAddition;     //魔法抗性加成
     private int healthPointAddition;    //生命值加成
     private int costOfEquipment;        //金币
+    private int equipmentType;          //装备类型
+    private int skillExpAddition;       //技能经验加成
+
 
     public Equipment(){}
 
 
-    public Equipment(String name, int physicAdditon, int magicAddition, int physicArmorAddition, int magicArmorAddition, int healthPointAddition) {
+    public Equipment(String name, int physicAdditon, int magicAddition, int physicArmorAddition, int magicArmorAddition, int healthPointAddition, int costOfEquipment, int equipmentType, int skillExpAddition) {
         this.name = name;
         this.physicAdditon = physicAdditon;
         this.magicAddition = magicAddition;
         this.physicArmorAddition = physicArmorAddition;
         this.magicArmorAddition = magicArmorAddition;
         this.healthPointAddition = healthPointAddition;
+        this.costOfEquipment = costOfEquipment;
+        this.equipmentType = equipmentType;
+        this.skillExpAddition = skillExpAddition;
     }
 
     public String getName() {
@@ -76,10 +82,26 @@ public class Equipment {
         this.costOfEquipment = costOfEquipment;
     }
 
+    public int getEquipmentType() {
+        return equipmentType;
+    }
+
+    public void setEquipmentType(int equipmentType) {
+        this.equipmentType = equipmentType;
+    }
+
+    public int getSkillExpAddition() {
+        return skillExpAddition;
+    }
+
+    public void setSkillExpAddition(int skillExpAddition) {
+        this.skillExpAddition = skillExpAddition;
+    }
+
     //test
     public void printall(){
-        System.out.println("装备名称:"+getName()+'\t'+"物理加成："+getPhysicAdditon()+'\t'+"魔法加成："+getMagicAddition()+'\n'+
-                "物抗加成："+getPhysicArmorAddition()+'\t'+"魔抗加成："+getMagicArmorAddition());
+        System.out.println("装备名称:"+getName()+'\t'+"物理加成："+getPhysicAdditon()+'\t'+"魔法加成："+getMagicAddition()+'\t'+
+                "物抗加成："+getPhysicArmorAddition()+'\t'+"魔抗加成："+getMagicArmorAddition()+'\t'+"价值花费："+getCostOfEquipment()+"\t"+"技能经验加成："+getSkillExpAddition());
     }
 
 }

@@ -6,6 +6,7 @@ import Service.impl.PlayerServiceImpl;
 import bean.Monster;
 import bean.Player;
 import bean.Skill;
+import bean.Weapon;
 import exception.AttackException;
 import util.Level;
 
@@ -23,7 +24,9 @@ public class AttackWithWeapon implements AttackBehavior {
     @Override
     public int computeDamage(Player player , Skill skill ) throws AttackException {
         if(skill== null){
-            return player.getPhysicDamage();    //使用武器进攻，其实就是平A
+            Weapon weapon = player.getCurrentWeapon();
+            int damageOfWeapon = weapon.getWeaponDamage();
+            return player.getPhysicDamage() + damageOfWeapon;    //使用武器进攻，其实就是平A
         }else {
             throw new AttackException("使用武器攻击时，调用计算伤害函数出错");
         }
@@ -52,7 +55,7 @@ public class AttackWithWeapon implements AttackBehavior {
             player.print();
             monster.print();
             System.out.println("--------------------------------------");
-        }else {
+          }else {
             monster.setBlood(bloodOfMonster-damage);
 
             System.out.println("用武器攻击小怪");

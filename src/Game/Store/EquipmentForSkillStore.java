@@ -36,5 +36,16 @@ public class EquipmentForSkillStore implements EquipmentStore {
         }
     }
 
+    @Override
+    public List<Equipment> getAllEquipments(){
+        return equipments;
+    }
 
+    public List<Equipment> getEquipments() {
+        return equipments;
+    }
+
+    public void setEquipments(List<Equipment> equipments) {
+        this.equipments = equipments;
+    }
 }

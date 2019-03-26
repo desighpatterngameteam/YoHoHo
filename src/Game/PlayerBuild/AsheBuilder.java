@@ -2,6 +2,7 @@ package Game.PlayerBuild;
 
 import Game.PlayerBuild.PlayerBuilder;
 import bean.Constants;
+import bean.Equipment;
 import bean.Skill;
 import bean.Weapon;
 
@@ -31,6 +32,10 @@ public class AsheBuilder extends PlayerBuilder {
         player.setMagicDamage(Constants.PLAYER_INIT_MAGIC_DAMAGE);//玩家初始魔法伤害为0
         player.setPhysicDamage(Constants.PLAYER_INIT_PHYSIC_ARMOR);//初始物理抗性100
         player.setMagicArmor(Constants.PLAYER_INIT_MAGIC_ARMOR);//初始魔法抗性为0
+
+        //初始装备栏为 空的集合
+        List<Equipment> equipments = new ArrayList<>();
+        player.setEquipments(equipments);
     }
 
     @Override
@@ -38,26 +43,30 @@ public class AsheBuilder extends PlayerBuilder {
         List<Skill> skills = new ArrayList<>();
         Skill skill1 = new Skill();
         skill1.setSkillName("冰霜射击");
-        skill1.setLevel(0);
+        skill1.setLevel(1);
         skill1.setPhysicAdditionDamage(100);
         skill1.setMagicAdditionDamge(50);
         skill1.setMagicConsume(200);
         HashSet<Integer> trigerKey = new HashSet<>();
         skill1.setTrigerKey(trigerKey);
+        skill1.setSkillExp(0);
 
         Skill skill2 = new Skill();
         skill2.setSkillName("万箭齐发");
-        skill2.setLevel(0);
+        skill2.setLevel(1);
         skill2.setPhysicAdditionDamage(200);
         skill2.setMagicAdditionDamge(50);
         skill2.setMagicConsume(200);
         HashSet<Integer> trigerKey1 = new HashSet<>();
         skill2.setTrigerKey(trigerKey1);
+        skill2.setSkillExp(0);
 
         skills.add(skill1);
         skills.add(skill2);
 
         player.setSkills(skills);
+        player.setCurrentSelectedSkillIndex(0);
+
     }
 
     @Override
@@ -69,5 +78,7 @@ public class AsheBuilder extends PlayerBuilder {
         weapon1.setWeaponDamage(100);   //初始的伤害为100
         weapons.add(weapon1);
         player.setWeapons(weapons);
+        player.setCurrentWeapon(weapon1);
+
     }
 }

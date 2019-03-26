@@ -50,4 +50,8 @@ public class Constants {
     //使用物理攻击 信号
     public final static String ATTACK_WITH_WEAPON = "0";
 
+    //装备的 类型有两种，一种是给强化武器的，一种是强化技能的
+    public final static int EQUIPMENT_FOR_WEAPON = 1;
+    public final static int EQUIPMENT_FOR_SKILL= 2;
+
 }
