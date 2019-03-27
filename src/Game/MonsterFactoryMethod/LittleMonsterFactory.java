@@ -1,5 +1,7 @@
 package Game.MonsterFactoryMethod;
 
+import Game.Attack.AttackByLittleMonster;
+import Game.Attack.AttackByMonster;
 import Game.MonsterFactoryMethod.MonsterFactory;
 import bean.Constants;
 import bean.Monster;
@@ -19,7 +21,8 @@ public class LittleMonsterFactory extends MonsterFactory {
         monster.setExpAddition(Constants.MONSTER_EXPADDITION_ARMY);
         monster.setBlood(Constants.MONSTER_DEFAULT_BLOOD_ARMY);
         monster.setMoneyAddition(Constants.MONSTER_MONEYADDITION_ARMY);
-
+        AttackByMonster attackByLittleMonster = new AttackByLittleMonster();
+        monster.setAttackByMonster(attackByLittleMonster);
         return monster;
     }
 }

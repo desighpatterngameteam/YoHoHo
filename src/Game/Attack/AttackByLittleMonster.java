@@ -6,15 +6,15 @@ import bean.Player;
 public class AttackByLittleMonster implements AttackByMonster {
 
     @Override
-    public int computeDamage(Player player, Monster monster){
+    public int computeDamage( Monster monster,Player player){
         int armorSum = player.getPhysicArmor();
         int monsterPhysicDamage = monster.getPhysicDamage();
         return monsterPhysicDamage - armorSum;
     }
 
     @Override
-    public void attackPlayer(Player player, Monster monster){
-        int damage = computeDamage(player,monster);
+    public void attackPlayer( Monster monster,Player player){
+        int damage = computeDamage(monster,player);
         int currentHealthPoint = player.getHealthPoint();
         if( currentHealthPoint < damage){
             player.setHealthPoint(0);

@@ -47,8 +47,10 @@ public class AttackWithSkill implements AttackBehavior {
             if (bloodOfMonster - damage < 0 ){
                 System.out.println("--------------------------------------");
                 monster.setBlood(0);
+
 //                player
                 player.updateExp(monster);
+                player.updateCash(monster);
                 System.out.println("--------------------------------------");
             }else {
                 monster.setBlood(bloodOfMonster-damage);

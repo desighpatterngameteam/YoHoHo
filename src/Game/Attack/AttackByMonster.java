@@ -7,8 +7,8 @@ import exception.AttackException;
 
 public interface AttackByMonster {
 
-    public int computeDamage(Player player, Monster monster) ;
+    public int computeDamage(Monster monster,Player player) ;
 
-    public void attackPlayer(Player player, Monster monster);
+    public void attackPlayer(Monster monster,Player player);
 
 }

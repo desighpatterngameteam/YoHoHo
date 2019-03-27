@@ -2,38 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f40dd37-49eb-45bc-b8bd-9d91a7799adb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Service/MonsterService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Service/impl/MonsterServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/yohoho/Game/PlayerBuild/AsheBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/yohoho/Game/PlayerBuild/AsheBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/yohoho/Game/PlayerBuild/GarenBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/yohoho/Game/PlayerBuild/GarenBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/yohoho/Game/Store/EquipmentForSkillStore.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/yohoho/Game/Store/EquipmentForSkillStore.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/yohoho/Game/Store/EquipmentForWeaponStore.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/yohoho/Game/Store/EquipmentForWeaponStore.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/yohoho/Game/Store/EquipmentStore.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/yohoho/Game/Store/EquipmentStore.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/yohoho/Game/Store/GameStore.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/yohoho/Game/Store/GameStore.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/yohoho/Game/Attack/AttackByBoss.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/yohoho/Game/Attack/AttackByBoss.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/yohoho/Game/Attack/AttackByLittleMonster.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/yohoho/Game/Attack/AttackByLittleMonster.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/yohoho/Game/Attack/AttackByMonster.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/yohoho/Game/Attack/AttackByMonster.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/yohoho/Game/Attack/AttackWithSkill.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/yohoho/Game/Attack/AttackWithSkill.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/yohoho/Game/Attack/AttackWithWeapon.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/yohoho/Game/Attack/AttackWithWeapon.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/yohoho/Game/MonsterFactoryMethod/BossMonsterFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/yohoho/Game/MonsterFactoryMethod/BossMonsterFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/yohoho/Game/MonsterFactoryMethod/LittleMonsterFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/yohoho/Game/MonsterFactoryMethod/LittleMonsterFactory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/yohoho/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/yohoho/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/yohoho/Service/PlayerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/yohoho/Service/PlayerService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/yohoho/Service/impl/PlayerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/yohoho/Service/impl/PlayerServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/yohoho/bean/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/yohoho/bean/Constants.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/yohoho/bean/Equipment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/yohoho/bean/Equipment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/yohoho/bean/Monster.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/yohoho/bean/Monster.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/yohoho/bean/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/yohoho/bean/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/yohoho/bean/Skill.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/yohoho/bean/Skill.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/yohoho/util/Level.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/yohoho/util/Level.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Attack/AttackBehavior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Attack/AttackBehavior.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Attack/AttackByBoss.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Attack/AttackByBoss.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Attack/AttackByLittleMonster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Attack/AttackByLittleMonster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Attack/AttackByMonster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Attack/AttackByMonster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Attack/AttackWithSkill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Attack/AttackWithSkill.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game/Attack/AttackWithWeapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Attack/AttackWithWeapon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/PlayerBuild/AsheBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/PlayerBuild/AsheBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/PlayerBuild/GarenBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/PlayerBuild/GarenBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Store/EquipmentForSkillStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Store/EquipmentForSkillStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Store/EquipmentForWeaponStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Store/EquipmentForWeaponStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Store/EquipmentStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Store/EquipmentStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Store/GameStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Store/GameStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/MonsterFactoryMethod/BossMonsterFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/MonsterFactoryMethod/BossMonsterFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/MonsterFactoryMethod/LittleMonsterFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/MonsterFactoryMethod/LittleMonsterFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Service/PlayerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/PlayerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Service/impl/PlayerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/impl/PlayerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bean/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bean/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bean/Equipment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bean/Equipment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bean/Monster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bean/Monster.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bean/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bean/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bean/Skill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bean/Skill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bean/Weapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bean/Weapon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/Level.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/blue_bald_hello_small.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/red_flying.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/yellow_green_umm.png" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,22 +59,21 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="215" column="37" selection-start-line="215" selection-start-column="37" selection-end-line="215" selection-end-column="37" />
+            <state relative-caret-position="855">
+              <caret line="67" column="8" selection-start-line="67" selection-start-column="8" selection-end-line="67" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#test1#0;class#Main#0" />
-                <element signature="method#testlist#0;class#Main#0" />
+                <element signature="e#2285#2311#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Game/PlayerBuild/AsheBuilder.java">
+        <entry file="file://$PROJECT_DIR$/src/Service/MonsterService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-39">
-              <caret line="54" column="30" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
+            <state relative-caret-position="250">
+              <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -87,8 +84,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Service/PlayerService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="15" column="75" selection-start-line="15" selection-start-column="75" selection-end-line="15" selection-end-column="75" />
+            <state relative-caret-position="150">
+              <caret line="12" column="97" selection-start-line="12" selection-start-column="97" selection-end-line="12" selection-end-column="97" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -97,10 +94,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Service/impl/PlayerServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/Game/Store/GameStore.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="90" column="64" selection-start-line="90" selection-start-column="64" selection-end-line="90" selection-end-column="64" />
+            <state relative-caret-position="2050">
+              <caret line="87" column="31" selection-start-line="87" selection-start-column="31" selection-end-line="87" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -109,37 +106,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Game/Attack/AttackWithWeapon.java">
+        <entry file="file://$PROJECT_DIR$/src/util/Level.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-500">
-              <caret line="28" column="60" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Game/MonsterFactoryMethod/BossMonsterFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Game/MonsterFactoryMethod/LittleMonsterFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="425">
+              <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -147,8 +117,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/bean/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="303" column="42" selection-start-line="303" selection-start-column="42" selection-end-line="303" selection-end-column="42" />
+            <state relative-caret-position="1075">
+              <caret line="48" column="19" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -159,8 +129,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Game/Attack/AttackWithSkill.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="686">
-              <caret line="45" column="23" lean-forward="true" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
+            <state relative-caret-position="1175">
+              <caret line="52" column="43" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -169,10 +139,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Game/Attack/AttackBehavior.java">
+        <entry file="file://$PROJECT_DIR$/src/Game/Attack/AttackByBoss.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="23" column="68" selection-start-line="23" selection-start-column="68" selection-end-line="23" selection-end-column="68" />
+            <state relative-caret-position="475">
+              <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -202,7 +172,6 @@
         <option value="$PROJECT_DIR$/src/exception/AttackException.java" />
         <option value="$PROJECT_DIR$/src/Game/AttackBehavior.java" />
         <option value="$PROJECT_DIR$/src/Game/AttackWithWeapon.java" />
-        <option value="$PROJECT_DIR$/src/bean/Monster.java" />
         <option value="$PROJECT_DIR$/src/Game/AsheBuilder.java" />
         <option value="$PROJECT_DIR$/src/Game/PlayerDirector.java" />
         <option value="$PROJECT_DIR$/src/Game/LittleMonsterFactory.java" />
@@ -218,10 +187,6 @@
         <option value="$PROJECT_DIR$/src/Service/impl/PlayerService.java" />
         <option value="$PROJECT_DIR$/src/util/findExpByLevel.java" />
         <option value="$PROJECT_DIR$/src/Game/Attack/AttackPlayer.java" />
-        <option value="$PROJECT_DIR$/src/Game/Attack/AttackByMonster.java" />
-        <option value="$PROJECT_DIR$/src/Game/Attack/AttackByLittleMonster.java" />
-        <option value="$PROJECT_DIR$/src/Game/Attack/AttackByBoss.java" />
-        <option value="$PROJECT_DIR$/src/Game/Attack/AttackWithSkill.java" />
         <option value="$PROJECT_DIR$/src/Game/Store/EquipmentStore.java" />
         <option value="$PROJECT_DIR$/src/Game/Store/EquipmentForWeaponStore.java" />
         <option value="$PROJECT_DIR$/src/Game/Store/EquipmentForSkillStore.java" />
@@ -234,10 +199,19 @@
         <option value="$PROJECT_DIR$/src/bean/Skill.java" />
         <option value="$PROJECT_DIR$/src/bean/Equipment.java" />
         <option value="$PROJECT_DIR$/src/Game/Store/GameStore.java" />
-        <option value="$PROJECT_DIR$/src/Game/Attack/AttackWithWeapon.java" />
-        <option value="$PROJECT_DIR$/src/Service/PlayerService.java" />
-        <option value="$PROJECT_DIR$/src/bean/Player.java" />
         <option value="$PROJECT_DIR$/src/Service/impl/PlayerServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/bean/Monster.java" />
+        <option value="$PROJECT_DIR$/src/Service/MonsterService.java" />
+        <option value="$PROJECT_DIR$/src/Game/Attack/AttackByMonster.java" />
+        <option value="$PROJECT_DIR$/src/Game/Attack/AttackByBoss.java" />
+        <option value="$PROJECT_DIR$/src/Game/Attack/AttackByLittleMonster.java" />
+        <option value="$PROJECT_DIR$/src/Service/impl/MonsterServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/Game/MonsterFactoryMethod/LittleMonsterFactory.java" />
+        <option value="$PROJECT_DIR$/src/Game/MonsterFactoryMethod/BossMonsterFactory.java" />
+        <option value="$PROJECT_DIR$/src/Game/Attack/AttackWithSkill.java" />
+        <option value="$PROJECT_DIR$/src/Game/Attack/AttackWithWeapon.java" />
+        <option value="$PROJECT_DIR$/src/bean/Player.java" />
+        <option value="$PROJECT_DIR$/src/Service/PlayerService.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
@@ -248,7 +222,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1386" />
@@ -260,8 +234,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -318,7 +290,34 @@
               <item name="yohoho" type="b2602c69:ProjectViewProjectNode" />
               <item name="yohoho" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yohoho" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yohoho" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="map" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yohoho" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yohoho" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="others" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yohoho" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yohoho" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yohoho" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yohoho" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="yohoho" type="b2602c69:ProjectViewProjectNode" />
@@ -326,16 +325,24 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="yohoho" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yohoho" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Main.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553620640184" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553690297326" />
     <property name="last_opened_file_path" value="D:/sf_例子/MonsterBattleSim-master/Monster Battle" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
@@ -412,16 +419,21 @@
       <workItem from="1553560970968" duration="4401000" />
       <workItem from="1553579040495" duration="21018000" />
       <workItem from="1553610971932" duration="9236000" />
+      <workItem from="1553620732181" duration="169000" />
+      <workItem from="1553647271951" duration="9993000" />
+      <workItem from="1553664900875" duration="7058000" />
+      <workItem from="1553682880644" duration="6492000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115442000" />
+    <option name="totallyTimeSpent" value="139154000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1386" height="788" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22314675" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23604827" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -430,7 +442,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32843137" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.84942716" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.84885496" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39770868" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -455,14 +467,24 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>36</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/img/yellow_green_umm.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/img/yellow_green_umm.png" />
     <entry file="jar://D:/Java/1.8.0_60/jdk/src.zip!/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
@@ -496,72 +518,10 @@
     <entry file="file://$PROJECT_DIR$/yohoho.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/MonsterFactoryMethod/MonsterFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/img/red_flying.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/img/blue_bald_hello_small.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Attack/AttackByMonster.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="11" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Attack/AttackByLittleMonster.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="23" column="9" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="23" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bean/Monster.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="e#2157#2158#0" expanded="true" />
-            <element signature="e#2203#2204#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Attack/AttackByBoss.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/img/red_flying.png" />
+    <entry file="file://$PROJECT_DIR$/src/img/blue_bald_hello_small.png" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Store/EquipmentStore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/bean/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -607,13 +567,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/util/Level.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Game/PlayerBuild/GarenBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
@@ -628,18 +581,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Store/EquipmentForSkillStore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-739">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1020#1021#0" expanded="true" />
-            <element signature="e#1053#1054#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -667,40 +608,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Store/GameStore.java">
+    <entry file="file://$PROJECT_DIR$/src/Game/PlayerBuild/AsheBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="72" column="47" lean-forward="true" selection-start-line="72" selection-start-column="47" selection-end-line="72" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/MonsterFactoryMethod/BossMonsterFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/MonsterFactoryMethod/LittleMonsterFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Attack/AttackWithWeapon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-500">
-          <caret line="28" column="60" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
+        <state relative-caret-position="1100">
+          <caret line="54" column="30" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -709,7 +620,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Game/Attack/AttackBehavior.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
+        <state relative-caret-position="500">
           <caret line="23" column="68" selection-start-line="23" selection-start-column="68" selection-end-line="23" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -717,10 +628,156 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Attack/AttackWithSkill.java">
+    <entry file="file://$PROJECT_DIR$/src/Game/Store/EquipmentStore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="686">
-          <caret line="45" column="23" lean-forward="true" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
+        <state relative-caret-position="286">
+          <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/Store/EquipmentForSkillStore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-350">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1020#1021#0" expanded="true" />
+            <element signature="e#1053#1054#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Service/impl/PlayerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1978">
+          <caret line="21" column="70" lean-forward="true" selection-start-line="21" selection-start-column="70" selection-end-line="21" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bean/Monster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-225">
+          <caret line="93" column="5" selection-start-line="93" selection-start-column="5" selection-end-line="100" selection-end-column="7" />
+          <folding>
+            <element signature="e#2047#2048#0" expanded="true" />
+            <element signature="e#2085#2086#0" expanded="true" />
+            <element signature="e#2156#2157#0" expanded="true" />
+            <element signature="e#2210#2211#0" expanded="true" />
+            <element signature="e#2157#2158#0" expanded="true" />
+            <element signature="e#2203#2204#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/Attack/AttackByLittleMonster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="8" column="59" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/Attack/AttackByMonster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/MonsterFactoryMethod/MonsterFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Service/impl/MonsterServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/Attack/AttackWithWeapon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1075">
+          <caret line="51" column="37" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/MonsterFactoryMethod/BossMonsterFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/MonsterFactoryMethod/LittleMonsterFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="24" column="56" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/img/equipment/mfgs_skill.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/img/equipment/jjbz_weapon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/img/monster/LittleMonster.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/img/monster/Boss.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/img/player/garen.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/img/player/ashe.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/img/map/gameScene.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="67" column="8" selection-start-line="67" selection-start-column="8" selection-end-line="67" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2285#2311#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Service/MonsterService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -729,52 +786,57 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Service/PlayerService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="15" column="75" selection-start-line="15" selection-start-column="75" selection-end-line="15" selection-end-column="75" />
+        <state relative-caret-position="150">
+          <caret line="12" column="97" selection-start-line="12" selection-start-column="97" selection-end-line="12" selection-end-column="97" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/PlayerBuild/AsheBuilder.java">
+    <entry file="file://$PROJECT_DIR$/src/Game/Store/GameStore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-39">
-          <caret line="54" column="30" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
+        <state relative-caret-position="2050">
+          <caret line="87" column="31" selection-start-line="87" selection-start-column="31" selection-end-line="87" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/util/Level.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/bean/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="303" column="42" selection-start-line="303" selection-start-column="42" selection-end-line="303" selection-end-column="42" />
+        <state relative-caret-position="1075">
+          <caret line="48" column="19" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Service/impl/PlayerServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/Game/Attack/AttackWithSkill.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="90" column="64" selection-start-line="90" selection-start-column="64" selection-end-line="90" selection-end-column="64" />
+        <state relative-caret-position="1175">
+          <caret line="52" column="43" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/Game/Attack/AttackByBoss.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="215" column="37" selection-start-line="215" selection-start-column="37" selection-end-line="215" selection-end-column="37" />
+        <state relative-caret-position="475">
+          <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#test1#0;class#Main#0" />
-            <element signature="method#testlist#0;class#Main#0" />
           </folding>
         </state>
       </provider>

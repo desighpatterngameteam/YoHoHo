@@ -3,6 +3,8 @@ package Service.impl;
 import Game.Attack.AttackBehavior;
 import Game.Attack.AttackWithSkill;
 import Game.Attack.AttackWithWeapon;
+import Game.Store.EquipmentStore;
+import Game.Store.GameStore;
 import bean.*;
 import exception.AttackException;
 import exception.NotEnoughCashException;
@@ -16,13 +18,19 @@ public class PlayerServiceImpl implements Service.PlayerService {
 
     /**
      * 买装备  ，如果金币不足，输出金币不足异常
-     * @param equipment
+     * 调用说明：Swing中的 商品栏里有 两个部分：1是 强化武器的装备栏，2是 强化技能的装备栏
+     *          玩家选择强化武器的装备栏 传入 equipmentForWeaponStore ， 并传入 玩家选的 equipmentIndex
+     * @param equipmentStore
+     * @param equipmentIndex
      * @throws NotEnoughCashException
      */
     @Override
-    public void BuyEquipment(Equipment equipment) throws NotEnoughCashException {
-        int currentCash = player.getCash();
+    public void BuyEquipment(EquipmentStore equipmentStore, int equipmentIndex) throws NotEnoughCashException {
 
+        List<Equipment> equipments1 = equipmentStore.getAllEquipments();
+        Equipment equipment = equipments1.get(equipmentIndex);
+
+        int currentCash = player.getCash();
         int cost = equipment.getCostOfEquipment();
         System.out.println("当前花费的 金币是："+cost);
         if(currentCash < cost){
@@ -76,7 +84,7 @@ public class PlayerServiceImpl implements Service.PlayerService {
     /**
      * 使用技能攻击怪兽
      * @param monster
-     * @param skill
+     * @param attackInfo    Swing传过来的攻击信息 ，可以是 "1 q" 或者"2 w" ."1 q"使用1技能，"2 w"使用2技能
      * @throws AttackException
      */
     @Override

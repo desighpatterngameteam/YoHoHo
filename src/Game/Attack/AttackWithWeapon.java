@@ -49,7 +49,7 @@ public class AttackWithWeapon implements AttackBehavior {
         if (bloodOfMonster - damage <= 0 ){
             monster.setBlood(0);
             player.updateExp(monster);
-
+            player.updateCash(monster);
             System.out.println("用武器攻击小怪");
             System.out.println("--------------------------------------");
             player.print();

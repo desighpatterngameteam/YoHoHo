@@ -1,5 +1,6 @@
 package Service;
 
+import Game.Store.EquipmentStore;
 import bean.Equipment;
 import bean.Monster;
 import bean.Player;
@@ -9,7 +10,7 @@ import exception.NotEnoughCashException;
 
 public interface PlayerService {
 
-    public void BuyEquipment(Equipment equipment) throws NotEnoughCashException;
+    public void BuyEquipment(EquipmentStore equipmentStore, int equipmentIndex) throws NotEnoughCashException;
 
     public void AttackMonsterWithWeapon( Monster monster) throws AttackException;
 
@@ -20,4 +21,5 @@ public interface PlayerService {
      * @param skillIndex
      */
     public void SetCurrentSelectedSkill( int skillIndex);
+
 }

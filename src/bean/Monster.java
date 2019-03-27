@@ -1,5 +1,7 @@
 package bean;
 
+import Game.Attack.AttackByMonster;
+
 public class Monster implements Cloneable{
 
     private String name;    //小怪名称
@@ -10,9 +12,11 @@ public class Monster implements Cloneable{
     private int blood;          //血条
     private int moneyAddition;  //金币加成（被玩家消灭后)
 
+    private AttackByMonster attackByMonster;    //怪兽 的攻击行为
+
     public Monster(){}
 
-    public Monster(String name, int level, int physicDamage, int magicDamage, int expAddition, int blood, int moneyAddition) {
+    public Monster(String name, int level, int physicDamage, int magicDamage, int expAddition, int blood, int moneyAddition, AttackByMonster attackByMonster) {
         this.name = name;
         this.level = level;
         this.physicDamage = physicDamage;
@@ -20,6 +24,7 @@ public class Monster implements Cloneable{
         this.expAddition = expAddition;
         this.blood = blood;
         this.moneyAddition = moneyAddition;
+        this.attackByMonster = attackByMonster;
     }
 
     public String getName() {
@@ -78,14 +83,22 @@ public class Monster implements Cloneable{
         this.moneyAddition = moneyAddition;
     }
 
-    public void attackPlayer(Player player){
-        int temp_heath =  player.getHealthPoint() - (physicDamage+magicDamage);
-        if( temp_heath<0 ){ //如果玩家血量不够，直接赋值为0
-            player.setHealthPoint(0);
-        }else {
-            player.setHealthPoint(temp_heath);
-        }
+    public AttackByMonster getAttackByMonster() {
+        return attackByMonster;
     }
+
+    public void setAttackByMonster(AttackByMonster attackByMonster) {
+        this.attackByMonster = attackByMonster;
+    }
+
+//    public void attackPlayer(Player player){
+//        int temp_heath =  player.getHealthPoint() - (physicDamage+magicDamage);
+//        if( temp_heath<0 ){ //如果玩家血量不够，直接赋值为0
+//            player.setHealthPoint(0);
+//        }else {
+//            player.setHealthPoint(temp_heath);
+//        }
+//    }
 
     //判断怪兽是否还存活
     public boolean isMonsterAlive(){

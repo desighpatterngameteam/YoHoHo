@@ -32,7 +32,7 @@ public class Player {
 
     private Player(){}
 
-    public Player(String name, int level, int experience, int healthPoint, int magicPoint, int cash, int physicDamage, int magicDamage, int physicArmor, int magicArmor, AttackBehavior attackBehavior, List<Skill> skills, List<Equipment> equipments, List<Weapon> weapons, Weapon currentWeapon, int currentSelectedSkillIndex) {
+    private Player(String name, int level, int experience, int healthPoint, int magicPoint, int cash, int physicDamage, int magicDamage, int physicArmor, int magicArmor, AttackBehavior attackBehavior, List<Skill> skills, List<Equipment> equipments, List<Weapon> weapons, Weapon currentWeapon, int currentSelectedSkillIndex) {
         this.name = name;
         this.level = level;
         this.experience = experience;
@@ -295,7 +295,9 @@ public class Player {
     }
 
     /**
-     *
+     * 根据前面Swing传入的字符串  找到角色 所释放的技能
+     * @param attackInfo
+     * @return
      */
     public Skill findSkillByKeyInput( String attackInfo ){
         Skill result = new Skill();
@@ -307,5 +309,15 @@ public class Player {
         return result;
 
     }
+
+    /**
+     *
+     * @param defeatedMonster
+     */
+    public void updateCash( Monster defeatedMonster){
+        uniquePlayer.setCash(uniquePlayer.getCash()+ defeatedMonster.getMoneyAddition());
+    }
+
+
 
 }
