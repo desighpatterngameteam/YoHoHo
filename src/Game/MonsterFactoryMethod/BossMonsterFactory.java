@@ -14,7 +14,10 @@ public class BossMonsterFactory extends MonsterFactory {
     @Override
     public Monster createMonster(){
         Monster monster = new Monster();
+        monster.setImage(Constants.Boss);
         monster.setName("哥斯拉");
+        monster.setX(513);
+        monster.setY(40);
         monster.setLevel(Constants.MONSTER_LEVEL_BOSS);
         monster.setPhysicDamage(Constants.MONSTER_PHYSIC_DAMAGE_BOSS);
         monster.setMagicDamage(Constants.MONSTER_MAGIC_DAMAGE_BOSS);

@@ -70,7 +70,7 @@ public class Main extends JFrame {
         ct.add(bgp);
 
         //创建按钮
-//        jb = new JButton("开始游戏");
+//        JButton jb = new JButton("开始游戏");
 //        jb.setBounds(500,300,200,50);
 //        ct.add(jb);
 

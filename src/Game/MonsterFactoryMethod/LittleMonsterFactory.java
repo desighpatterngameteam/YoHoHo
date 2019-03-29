@@ -15,6 +15,9 @@ public class LittleMonsterFactory extends MonsterFactory {
     public Monster createMonster(){
         Monster monster = new Monster();
         monster.setName("百夫长");
+        monster.setX(900);
+        monster.setY(280);
+        monster.setImage(Constants.LittleMonster);
         monster.setLevel(Constants.MONSTER_LEVEL_ARMY);
         monster.setPhysicDamage(Constants.MONSTER_PHYSIC_DAMAGE_ARMY);
         monster.setMagicDamage(Constants.MONSTER_MAGIC_DAMAGE_ARMY);

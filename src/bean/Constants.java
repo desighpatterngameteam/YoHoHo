@@ -1,8 +1,22 @@
 package bean;
 
+import Game.MonsterFactoryMethod.BossMonsterFactory;
+
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
+import java.io.FileInputStream;
 import java.util.HashMap;
 
 public class Constants {
+
+    //面板高和宽
+    public static final int WIDTH = 1067;   //宽
+    public static final int HEIGHT = 600; // 面板高
+    //游戏状态
+    private static final int START = 0;
+    private static final int RUNNING = 1;
+    private static final int PAUSE = 2;
+    private static final int GAME_OVER = 3;
 
     //怪兽等级
     public final static int MONSTER_LEVEL_BOSS = 2;//BOSS等级
@@ -53,5 +67,37 @@ public class Constants {
     //装备的 类型有两种，一种是给强化武器的，一种是强化技能的
     public final static int EQUIPMENT_FOR_WEAPON = 1;
     public final static int EQUIPMENT_FOR_SKILL= 2;
+
+    //图片
+    public static BufferedImage background;
+    public static BufferedImage start;
+    public static BufferedImage hero0;
+    public static BufferedImage hero1;
+    public static BufferedImage pause;
+    public static BufferedImage gameover;
+    public static BufferedImage Boss;
+    public static BufferedImage LittleMonster;
+    public static BufferedImage bullet;
+
+
+
+    static { // 静态代码块，初始化图片资源
+        try {
+            background = ImageIO.read(new FileInputStream("src/img/map/gameScene.jpg"));
+
+            start = ImageIO.read(new FileInputStream("src/img/others/gamestart.png"));
+
+            bullet = ImageIO.read(new FileInputStream("src/img/weapon/airplane.png"));
+            hero0 = ImageIO.read(new FileInputStream("src/img/player/ashe.png"));
+            hero1 = ImageIO.read(new FileInputStream("src/img/player/garen.png"));
+            //pause = ImageIO.read(new FileInputStream("src/img/pause.png"));
+            gameover = ImageIO
+                    .read(new FileInputStream("src/img/others/gameover.png"));
+            Boss = ImageIO.read(new FileInputStream("src/img/monster/Boss.gif"));
+            LittleMonster = ImageIO.read(new FileInputStream("src/img/monster/LittleMonster.gif"));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
 }

@@ -4,6 +4,7 @@ import Game.Attack.AttackBehavior;
 import exception.AttackException;
 import util.Level;
 
+import java.awt.image.BufferedImage;
 import java.util.Iterator;
 import java.util.List;
 
@@ -318,6 +319,75 @@ public class Player {
         uniquePlayer.setCash(uniquePlayer.getCash()+ defeatedMonster.getMoneyAddition());
     }
 
+    /*
+    这以下是前端相关的方法
+     */
+    //private BufferedImage[] images = {,LwFrame.hero1};
+    private int index = 0;
+    private BufferedImage image;
+    private int x = 0;
+    private int y = 250;
+    private int width = 200;
+    private int height = 200;
 
+    public int getIndex() {
+        return index;
+    }
+
+    public void setIndex(int index) {
+        this.index = index;
+    }
+
+    public BufferedImage getImage() {
+        return image;
+    }
+
+    public void setImage(BufferedImage image) {
+        this.image = image;
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public void setY(int y) {
+        this.y = y;
+    }
+
+    public int getWidth() {
+        return width;
+    }
+
+    public void setWidth(int width) {
+        this.width = width;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
+    }
+
+    //英雄射击
+    //英雄射击
+    public Bullet[] shoot(){
+        int xStep = 20;      //4半
+        int yStep = height/2;  //步
+
+        Bullet[] bullets = new Bullet[1];
+        bullets[0] = new Bullet(width,y+yStep);
+        return bullets;
+
+    }
 
 }

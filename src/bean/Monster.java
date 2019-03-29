@@ -2,6 +2,8 @@ package bean;
 
 import Game.Attack.AttackByMonster;
 
+import java.awt.image.BufferedImage;
+
 public class Monster implements Cloneable{
 
     private String name;    //小怪名称
@@ -11,6 +13,51 @@ public class Monster implements Cloneable{
     private int expAddition;    //等级加成（被玩家消灭后）
     private int blood;          //血条
     private int moneyAddition;  //金币加成（被玩家消灭后)
+    private BufferedImage image; //图片
+    private int x;
+    private int y;
+    private int width;
+    private int height;
+
+    public int getX() {
+        return x;
+    }
+
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public void setY(int y) {
+        this.y = y;
+    }
+
+    public int getWidth() {
+        return width;
+    }
+
+    public void setWidth(int width) {
+        this.width = width;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
+    }
+
+    public BufferedImage getImage() {
+        return image;
+    }
+
+    public void setImage(BufferedImage image) {
+        this.image = image;
+    }
 
     private AttackByMonster attackByMonster;    //怪兽 的攻击行为
 
@@ -100,6 +147,11 @@ public class Monster implements Cloneable{
 //        }
 //    }
 
+    public boolean shootBy(Bullet bullet){
+        int x = bullet.getX();  //子弹横坐标
+        int y = bullet.getY();  //子弹纵坐标
+        return this.x<x;
+    }
     //判断怪兽是否还存活
     public boolean isMonsterAlive(){
         return blood>0 ? true : false ;
