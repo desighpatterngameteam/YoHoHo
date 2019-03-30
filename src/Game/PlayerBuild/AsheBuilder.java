@@ -32,7 +32,7 @@ public class AsheBuilder extends PlayerBuilder {
         player.setMagicDamage(Constants.PLAYER_INIT_MAGIC_DAMAGE);//玩家初始魔法伤害为0
         player.setPhysicDamage(Constants.PLAYER_INIT_PHYSIC_ARMOR);//初始物理抗性100
         player.setMagicArmor(Constants.PLAYER_INIT_MAGIC_ARMOR);//初始魔法抗性为0
-
+        player.setImage(Constants.hero0);//添加图片
         //初始装备栏为 空的集合
         List<Equipment> equipments = new ArrayList<>();
         player.setEquipments(equipments);

@@ -78,6 +78,17 @@ public class Constants {
     public static BufferedImage Boss;
     public static BufferedImage LittleMonster;
     public static BufferedImage bullet;
+    public static BufferedImage choosePlayer;
+    public static BufferedImage buyObjects;
+    public static BufferedImage ep1;
+    public static BufferedImage ep2;
+    public static BufferedImage ep3;
+    public static BufferedImage ep4;
+    public static BufferedImage ep5;
+    public static BufferedImage asheskill;
+    public static BufferedImage garenskill;
+
+
 
 
 
@@ -87,7 +98,8 @@ public class Constants {
 
             start = ImageIO.read(new FileInputStream("src/img/others/gamestart.png"));
 
-            bullet = ImageIO.read(new FileInputStream("src/img/weapon/airplane.png"));
+
+            bullet = ImageIO.read(new FileInputStream("src/img/weapon/bullet.jpg"));
             hero0 = ImageIO.read(new FileInputStream("src/img/player/ashe.png"));
             hero1 = ImageIO.read(new FileInputStream("src/img/player/garen.png"));
             //pause = ImageIO.read(new FileInputStream("src/img/pause.png"));
@@ -95,6 +107,18 @@ public class Constants {
                     .read(new FileInputStream("src/img/others/gameover.png"));
             Boss = ImageIO.read(new FileInputStream("src/img/monster/Boss.gif"));
             LittleMonster = ImageIO.read(new FileInputStream("src/img/monster/LittleMonster.gif"));
+            choosePlayer = ImageIO
+                    .read(new FileInputStream("src/img/others/choosePlayer.jpeg"));
+            buyObjects = ImageIO
+                    .read(new FileInputStream("src/img/others/buyObjects.jpg"));
+            ep1 = ImageIO.read(new FileInputStream("src/img/equipment/jjbz_weapon.png"));
+            ep2 = ImageIO.read(new FileInputStream("src/img/equipment/qhbs_weapon.png"));
+            ep3 = ImageIO.read(new FileInputStream("src/img/equipment/ktkj_skill.png"));
+            ep4 = ImageIO.read(new FileInputStream("src/img/equipment/mfgs_skill.png"));
+            ep5 = ImageIO.read(new FileInputStream("src/img/equipment/wjzr_skill.png"));
+
+            asheskill = ImageIO.read(new FileInputStream("src/img/weapon/asheskill.jpg"));
+            garenskill = ImageIO.read(new FileInputStream("src/img/weapon/garenskill.jpg"));
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -62,10 +62,10 @@ public class Bullet  {
 	}
 
 	/** 初始化数据 */
-	public Bullet(int x,int y){
+	public Bullet(int x,int y,BufferedImage image){
 		this.x = x;
 		this.y = y;
-		this.image = Constants.bullet;
+		this.image = image;
 	}
 
 

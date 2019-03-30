@@ -380,13 +380,29 @@ public class Player {
 
     //英雄射击
     //英雄射击
-    public Bullet[] shoot(){
+    public Bullet[] shoot(int flag){
         int xStep = 20;      //4半
         int yStep = height/2;  //步
 
-        Bullet[] bullets = new Bullet[1];
-        bullets[0] = new Bullet(width,y+yStep);
-        return bullets;
+        if(flag == 0){
+            Bullet[] bullets = new Bullet[1];
+            bullets[0] = new Bullet(width+xStep,y+yStep,Constants.bullet);
+            return bullets;
+        }else {
+            if (this.name.equals("艾希")){
+                Bullet[] bullets = new AsheSkill[1];
+                bullets[0] = new AsheSkill(width+xStep,y+yStep,Constants.asheskill);
+                return bullets;
+            }else {
+                Bullet[] bullets = new GarenSkill[1];
+                bullets[0] = new GarenSkill(width+xStep,y+yStep,Constants.garenskill);
+                return bullets;
+            }
+
+        }
+
+
+
 
     }
 
